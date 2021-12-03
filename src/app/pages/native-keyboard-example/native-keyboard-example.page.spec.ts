@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
-import { FolderPage } from './folder.page';
 
-describe('FolderPage', () => {
-  let component: FolderPage;
-  let fixture: ComponentFixture<FolderPage>;
+import { NativeKeyboardExamplePage } from './native-keyboard-example.page';
+
+describe('NativeKeyboardExamplePage', () => {
+  let component: NativeKeyboardExamplePage;
+  let fixture: ComponentFixture<NativeKeyboardExamplePage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ FolderPage ],
-      imports: [IonicModule.forRoot(), RouterModule.forRoot([])]
+      declarations: [ NativeKeyboardExamplePage ],
+      imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(FolderPage);
+    fixture = TestBed.createComponent(NativeKeyboardExamplePage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
